@@ -1,5 +1,5 @@
 f = open('17(2).txt')
-m = list(map(int, f.readlines()))
+m = [int(i) for i in f]
 sr = 0
 k, k1 = 0, 0
 mn = 10 ** 10
@@ -8,7 +8,6 @@ for i in range(len(m)):
         sr += m[i]
         k1 += 1
 sr /= k1
-print(sr)
 for i in range(len(m)):
     if m[i] > sr:
         k += 1

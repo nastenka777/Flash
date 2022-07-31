@@ -1,5 +1,5 @@
 f = open('17(3).txt')
-m = list(map(int,f.readlines()))
+m = [int(i) for i in f]
 k = 0
 sr = sum(m) / len(m)
 for i in range(len(m)):

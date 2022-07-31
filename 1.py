@@ -1,5 +1,5 @@
 f = open('17(1).txt')
-m = list(map(int, f.readlines()))
+m = [int(i) for i in f]
 l = len(m)
 k, mxk, mx = 0, 0, 0
 for i in range(l - 3):
