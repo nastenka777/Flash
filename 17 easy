@@ -1,0 +1,9 @@
+f=open('17з.txt')
+a=[int(x) for x in f]
+lim=1000
+maxs=k=0
+for i in range(len(a)):
+    if a[i]>lim:
+        k+=1
+        maxs=max(maxs,a[i])
+print(k,maxs)
